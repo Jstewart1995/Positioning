@@ -57,6 +57,27 @@ footer {
     padding: 1em;
 }
 
+
+
+/*positioning styles start here*/
+
+.text-align-center{
+    text-align: center;
+    background-color: aqua;
+}
+
+.margin-auto > div{
+    margin:auto;
+    width:auto;
+    background-color: beige;
+    text-align: center;
+}
+
+/*positioning styles start here*/
+
+
+
+
 /* Responsive rules */
 
 /* DESKTOP */
