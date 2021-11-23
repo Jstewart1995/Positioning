@@ -41,7 +41,6 @@ h2,h3 {
 }
 
 a {
-    background-color:rgb(224, 7, 7);
     text-decoration: none;
 }
 
@@ -68,15 +67,105 @@ footer {
 
 .margin-auto > div{
     margin:auto;
-    width:auto;
+    width:50%;
     background-color: beige;
     text-align: center;
 }
 
-/*positioning styles start here*/
+/*positioning styles ends here*/
+
+
+/*Responsive 2 column layout rules start here*/
+ 
+
+
+/* Allows box to take up full space, ignoring padding/margin */
+* {
+    box-sizing: border-box;
+  }
+ /* Allows box to take up full space, ignoring padding/margin */
 
 
 
+/* Create two equal columns that float next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    min-height: 300px; /* Can be removed. Only for demonstration */
+  }
+   /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+ 
+/*Responsive 2 column layout rules ends here*/
+
+/*Font awseime social media and flrxbox starts here*/
+
+
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+   .fa:hover {
+      opacity: 0.7;
+  }
+   .fa-facebook {
+    background: #3B5998;
+    color: white;
+    padding: 20px 25px; /* Facebook icon was an oval shape*/
+  }
+   .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+   .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+   .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+   .fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+ 
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+  } 
+
+/*Font awseime social media and flrxbox ends here*/
+
+
+
+/*Flexible image rules start here*/
+
+img.flexible{
+    width: 100%;
+}
+
+
+
+.center-img{
+    margin: auto;
+    width: 100%;
+}
+
+.center-img img{
+    text-align:center;
+}
 
 /* Responsive rules */
 
@@ -135,4 +224,9 @@ footer {
         width: 100%;
     }
     
+/*columns take up whole screen in mobile*/
+    .column {
+        width: 100%;
+      }
+
 }
